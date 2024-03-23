@@ -7,11 +7,11 @@ The website utilizes technologies such as Vanilla JavaScript and Express, integr
 Link to website: https://www.jeanettemarieadolfsson.se/ <br>
 Fullstack developer: Karoline Lindroos, UX/UI designer: Johanna Christensson.
 
-## Syfte
+## Purpose
 
 This GitHub repository is intended solely to serve as a showcase.
 
-## Mappstruktur
+## Folder structure
 
 index.js <br>
 cloudbuild.yaml <br>
