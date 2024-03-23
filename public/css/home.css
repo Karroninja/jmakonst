@@ -1,0 +1,112 @@
+/*
+ * Style for the homepage
+ */
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    position: relative;
+}
+
+.gallery .vertical {
+    width: 48% !important;
+}
+
+.gallery .vertical.v-special {
+    margin-right: auto;
+}
+
+.gallery .clickImg {
+    width: 100%;
+    position: relative;
+}
+
+.gallery .clickImg p {
+    margin: 0 !important;
+    position: absolute;
+    bottom: 4%;
+    right: 2%;
+    color: var(--accent-yellow);
+}
+
+.gallery .clickImg.vertical p {
+    bottom: 2% !important;
+}
+
+.gallery div img.art {
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery div.art-popup {
+    position: fixed;
+    z-index: 10;
+    width: calc(100vw - (var(--nav-footer-width) * 2)) !important;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(252, 252, 252, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.25s, opacity 0.25s;
+}
+
+.gallery div.art-popup.show {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery div.art-popup.show img {
+    cursor: default;
+    height: unset !important;
+}
+
+.gallery div.art-popup.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.gallery div.art-popup picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery div.art-popup img {
+    width: 60%;
+}
+
+.gallery div.art-popup.vertical img {
+    width: 40%;
+}
+
+.gallery div.art-popup .art-popup-wrap-title-cross {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    display: flex;
+    gap: 1em;
+}
+
+.gallery div.art-popup .art-popup-wrap-title-cross p {
+    margin: 0 !important;
+}
+
+.gallery div.art-popup .fa-circle-xmark {
+    font-size: 2em;
+    cursor: pointer;
+    color: var(--grey);
+}

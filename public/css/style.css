@@ -1,0 +1,20 @@
+/*
+ * The stylesheet for this website.
+ */
+
+@import "./variables.css";
+@import "./init.css";
+@import "./typography.css";
+@import "./navbar.css";
+@import "./footer.css";
+@import "./home.css";
+@import "./about-press.css";
+@import "./404.css";
+@import "./state.css";
+
+/* Import Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+/* Import Open Sans and Playfair from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');

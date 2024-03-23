@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Karoline Lindroos">
+    <meta name="description" content="Homepage - showing Jeanette Marie Adolfsson art">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/logo_primary_black.svg">
+    <title>JMA | Galleri</title>
+</head>
+<body>
+    <nav class="nav" id="nav" role="navigation"></nav>
+
+    <main class="main">
+        <!-- <i onclick="downFunc()" id="fa-arrow-down" class="fa-solid fa-circle-chevron-down"></i> -->
+        <i id="fa-arrow-up" class="fa-solid fa-circle-chevron-up" tabindex="6" onclick="topFunc()" onkeypress="handleKeyPress(event)"></i>
+        <div class="gallery" id="gallery"></div>
+        <footer id="footer-main" class="footer-main">
+            <p>Skapad av:
+                <a href="https://www.linkedin.com/in/karoline-lindroos-38a424234/" target="_blank" title="LinkedIn: öppnas i ny flik">Karoline Lindroos <span class="visually-hidden">Öppnas i ny flik</span></a>
+                &
+                <a href="https://www.linkedin.com/in/johanna-christensson/" target="_blank" title="LinkedIn: öppnas i ny flik">Johanna Christensson <span class="visually-hidden">Öppnas i ny flik</span></a>
+            </p>
+            <p class="ja-copyright">JMA | Copyright &copy; 2024</p>
+        </footer>
+    </main>
+
+    <footer id="right-side-nav" class="right-side-nav">
+        <ul>
+            <li></li>
+            <li class="instagram">
+                <a href="https://www.instagram.com/jeanettemarieadolfsson/" title="Instagram: öppnas i ny flik" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span class="visually-hidden">Öppnas i ny flik</span>
+                </a>
+            </li>
+            <li>
+                <p>Jeanette Marie Adolfsson</p>
+            </li>
+            <li>
+                <p>&copy; 2024</p>
+            </li>
+        </ul>
+    </footer>
+    <script src="./js/nav.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>

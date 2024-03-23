@@ -1,0 +1,93 @@
+/**
+ * Initiate the CSS base and reset/normalize some items.
+ */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: var(--off-black);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: var(--off-white);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    padding: 0 var(--nav-footer-width);
+    width: 100%;
+    max-width: 1280px; /* Max width of a macbook air screen width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0;
+}
+
+.fa-circle-chevron-down {
+    font-size: 3em;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    z-index: 3;
+    margin: 0 auto;
+    color: var(--accent-gold);
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.5s, opacity 0.5s;
+}
+
+.fa-circle-chevron-up {
+    font-size: 3em;
+    position: fixed;
+    right: 10%;
+    bottom: 5%;
+    z-index: 3;
+    color: var(--accent-gold);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s;
+}
+
+.fa-circle-chevron-down.hide, .fa-circle-chevron-up.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.fa-circle-chevron-down.show, .fa-circle-chevron-up.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+footer.footer-main .ja-copyright {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    top: auto;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+  }

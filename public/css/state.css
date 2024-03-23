@@ -1,0 +1,695 @@
+/*---- settings for mobile and basic responsivity --- */
+
+/* ----- Special settings for galleri popup ---- */
+/* Detta är specifikt för vertikala bildern när skärmen är större än 1300px
+och höjden är mindre än 724px */
+@media (min-width: 1301px) and (max-height: 724px) {
+    .gallery div.art-popup.vertical img {
+        width: 30%;
+    }
+}
+
+/* Detta specifikt för vertikala bilder när skärmen är större än 1300px
+och höjden är mindre än 570px */
+@media (min-width: 1301px) and (max-height: 570px) {
+    .gallery div.art-popup.vertical img {
+        width: 25%;
+    }
+}
+
+/* För liggande konst: Detta inträffar när skärmen är större än 1301px
+och höjden är mindre än 650px */
+@media (min-width: 1301px) and (min-height: 650px) {
+    .gallery div.art-popup:not(.vertical) img {
+        width: 70%;
+        max-height: 750px;
+    }
+}
+
+/* För liggande konst: Detta inträffar när skärmen är större än 1301px
+och höjden är mindre än 720px */
+@media (min-width: 1301px) and (min-height: 720px) {
+    .gallery div.art-popup:not(.vertical) img {
+        width: 80%;
+        /* max-height: 750px; */
+    }
+}
+
+/* För liggande konst: Detta inträffar när skärmen är större än 1301px
+och höjden är mindre än 800px */
+@media (min-width: 1301px) and (min-height: 800px) {
+    .gallery div.art-popup:not(.vertical) img {
+        width: 90%;
+        /* max-height: 750px; */
+    }
+}
+
+/* För liggande konst: Detta inträffar när skärmen är större än 1301px
+och höjden är mindre än 850px */
+@media (min-width: 1301px) and (min-height: 850px) {
+    .gallery div.art-popup:not(.vertical) img {
+        width: 95%;
+        /* max-height: 750px; */
+    }
+}
+
+/* Detta inträffar när bilderna ändras till den optimerade versionen */
+@media (max-width: 1300px) {
+    div.gallery div.art-popup img {
+        width: 90%;
+    }
+
+    .gallery div.art-popup.vertical img {
+        width: 50%;
+    }
+}
+
+/* Detta inträffar när bilderna ändras till den optimerade versionen */
+@media (max-width: 1300px) and (min-height: 850px){
+    .gallery div.art-popup.vertical img {
+        width: 60%;
+    }
+}
+
+/* Detta inträffar när bilderna ändras till den optimerade versionen */
+@media (max-width: 1300px) and (min-height: 1000px){
+    .gallery div.art-popup.vertical img {
+        width: 70%;
+    }
+}
+
+/* Detta inträffar när bilderna ändras till den optimerade versionen,
+och skärmen är mindre än 633px hög */
+@media (max-width: 1299px) and (max-height: 633px) {
+    div.gallery div.art-popup img {
+        width: 80%;
+    }
+}
+
+/* Detta inträffar när bilderna ändras till den optimerade versionen,
+och skärmen är mindre än 633px hög */
+@media (max-width: 1299px) and (max-height: 660px) {
+    div.gallery div.art-popup img {
+        width: 80%;
+    }
+}
+
+/* Detta är specifikt för vertikala bildern när skärmen är mindra än 1300px,
+och skärmen är mindre än 570px hög */
+@media (max-width: 1299px) and (max-height: 660px) {
+    .gallery div.art-popup.vertical img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1299px) and (max-height: 660px) {
+    .gallery div.art-popup.vertical img {
+        width: 40%;
+    }
+}
+
+/* ----- END special settings for galleri popup ---- */
+
+/* ---- Special settings för right-side-nav ----- */
+@media (max-height: 800px) {
+    .right-side-nav li:nth-of-type(3) p {
+        margin-bottom: 9.3em;
+    }
+}
+
+@media (max-height: 775px) {
+    .right-side-nav li:first-child {
+        margin-bottom: 1em;
+    }
+
+    .right-side-nav li.instagram {
+        margin-top: -2em;
+    }
+
+    .right-side-nav li:last-child p {
+        margin-top: 0em !important;
+    }
+
+    .right-side-nav li:nth-of-type(1) {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-height: 700px) {
+    .right-side-nav li:nth-of-type(3) p {
+        margin-bottom: 7em;
+    }
+
+    .right-side-nav li.instagram {
+        flex-shrink: 0;
+        flex-basis: 110px;
+    }
+}
+
+@media (max-height: 680px) {
+    .right-side-nav li:nth-of-type(3) p {
+        margin-bottom: 7em;
+    }
+}
+
+@media (max-height: 630px) {
+    .nav li:nth-of-type(3) {
+        margin-top: 6em;
+        margin-bottom: 6em;
+    }
+
+    .right-side-nav li:nth-of-type(3) p {
+        margin-bottom: unset !important;
+    }
+
+    .right-side-nav li:last-child {
+        align-items: end;
+    }
+
+    .right-side-nav li:last-child p {
+        margin-top: unset !important;
+    }
+}
+
+@media (max-height: 600px) {
+    .right-side-nav li:last-child {
+        flex-shrink: 0;
+    }
+}
+
+/* ---- END Special settings för right-side-nav ----- */
+
+@media (max-width: 1440px) {
+    section.about {
+        width: 90%;
+    }
+
+    div.wrapCourses,
+    div.wrapPiku {
+        padding: 4em 8.5em;
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 112px !important;
+    }
+}
+
+@media (max-width: 1280px) {
+    section.about,
+    div.courses {
+        width: 100%;
+    }
+
+    section.about {
+        padding: 0 4em 4em 4em;
+    }
+
+    div.wrapCourses {
+        grid-template-columns: repeat(4, 200px);
+        padding: 4em;
+        gap: 2rem;
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 110px !important;
+    }
+
+    div.wrapPiku {
+        padding: 4em 9em;
+    }
+}
+
+@media (max-width: 1180px) {
+    div.wrapCourses {
+        grid-template-columns: repeat(4, 180px);
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 99px !important;
+    }
+
+    div.wrapCourses div h2 {
+        font-size: 1.25em !important;
+        letter-spacing: unset !important;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    section.about {
+        gap: unset;
+    }
+
+    section.about.press .wrapImg {
+        height: 600px;
+    }
+}
+
+@media (max-width: 1100px) {
+    div.wrapCourses {
+        grid-template-columns: repeat(3, 210px);
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 115px !important;
+    }
+
+    section.about.press .wrapImg {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1000px) {
+    div.wrapCourses {
+        grid-template-columns: repeat(3, 190px);
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 104px !important;
+    }
+}
+
+@media (max-width: 960px) {
+    div.gallery {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 920px) {
+    div.wrapCourses {
+        grid-template-columns: repeat(3, 180px);
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 99px !important;
+    }
+
+    div.wrapCourses div p {
+        font-size: 0.875em !important;
+    }
+}
+
+@media (max-width: 880px) {
+    div.wrapCourses {
+        grid-template-columns: repeat(3, 150px);
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 82px !important;
+    }
+
+    div.wrapCourses div h2 {
+        font-size: 1em !important;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 768px) {
+    section.about .wrapImg {
+        height: 500px;
+    }
+
+    section.about.press .wrapImg {
+        height: 400px;
+    }
+}
+
+@media (max-width: 920px) {
+    section.about.press .wrapImg {
+        padding: unset;
+        margin: unset;
+    }
+}
+
+@media (max-width: 885px) {
+    section.about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.about .wrapImg,
+    section.about.press .wrapImg {
+        float: unset;
+        margin: 0 auto;
+        width: unset;
+        height: unset;
+        padding: unset;
+    }
+
+    section.about .wrapInfo h1 {
+        padding-top: 1em !important;
+    }
+}
+
+@media (max-width: 800px) {
+    div.wrapCourses {
+        grid-template-columns: repeat(2, 200px);
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 110px !important;
+    }
+
+    div.wrapCourses div h2 {
+        font-size: 1.3em !important;
+    }
+}
+
+/*  --- Special mobile settings for gallery popup --- */
+@media (max-width: 767px) and (max-height: 1000px) {
+    div.gallery div.art-popup.vertical img {
+        width: 70%;
+        max-height: 1100px;
+    }
+}
+
+@media (max-width: 767px) and (max-height: 800px) {
+    div.gallery div.art-popup.vertical img {
+        max-height: 900px;
+    }
+}
+
+@media (max-width: 767px) and (max-height: 800px) {
+    div.gallery div.art-popup.vertical img {
+        max-height: 800px;
+    }
+}
+
+@media (max-width: 767px) and (max-height: 500px) {
+    div.gallery div.art-popup.vertical img {
+        max-height: 560px;
+    }
+}
+
+@media (max-width: 370px) and (max-height: 568px) {
+    div.gallery div.art-popup.vertical img {
+        max-height: unset;
+        width: 80% !important;
+    }
+}
+
+/*  --- END Special mobile settings for gallery popup --- */
+
+/*  --- mobile settings --- */
+@media (max-width: 767px) {
+    /* ---- Typography --------- */
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+    /* ---- End Typography ----- */
+
+    /* ---- Start inställningar för hamburgarmenyn ---- */
+    nav.nav {
+        width: 0%;
+        background-color: var(--accent-yellow) !important;
+        transition: all 1s;
+        z-index: 100;
+    }
+
+    #fa-bars {
+        width: 1em;
+        height: 1em;
+    }
+
+    nav.nav ul {
+        padding-left: unset;
+        padding-bottom: 4em;
+        transition: padding-left 1s;
+    }
+
+    nav.nav .logo {
+        flex-basis: unset;
+    }
+
+    nav.nav .logo a {
+        margin: unset;
+    }
+
+    nav.nav ul li {
+        justify-content: unset;
+        align-items: center;
+        flex-basis: 18%;
+    }
+
+    nav.nav li:nth-of-type(3) {
+        margin-top: unset !important;
+        margin-bottom: unset !important;
+    }
+
+    nav.nav .fa-xmark + ul {
+        padding: 0 4em 4em 4em;
+    }
+
+    nav.nav ul li a {
+        transform: unset;
+        margin: unset;
+        width: 100%;
+        text-align: left;
+    }
+
+    #jma-logo {
+        width: 160px;
+    }
+
+    #nav-instagram {
+        display: flex;
+    }
+
+    .fa-instagram {
+        margin: 0;
+    }
+    /* ---- Slut inställningar för hamburgarmeny ---- */
+
+    #fa-arrow-up,
+    #fa-arrow-down {
+        font-size: 2.5em;
+    }
+
+    #fa-arrow-up {
+        right: 3.3%;
+    }
+
+    main.main {
+        padding: 0;
+    }
+
+    div.gallery div.vertical {
+        width: 100% !important;
+    }
+
+    div.gallery div.art-popup {
+        width: 100vw !important;
+    }
+
+    div.gallery div.art-popup .art-popup-wrap-title-cross {
+        top: 3%;
+        right: 4%;
+    }
+
+    div.gallery div.art-popup.vertical img {
+        width: 70%;
+    }
+
+    footer.right-side-nav {
+        display: none;
+    }
+
+    footer.footer-main .ja-copyright {
+        display: flex;
+        margin: 0;
+    }
+
+    section.about .wrapImg img,
+    section.about.press .wrapImg img{
+        height: unset;
+        width: 100%;
+    }
+
+    .wrap-press-img {
+        padding: 4em;
+    }
+
+    div.wrapPiku {
+        padding: unset;
+    }
+
+    div.wrapCourses {
+        grid-template-columns: repeat(2, 240px);
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 132px !important;
+    }
+
+    div.wrapCourses div p {
+        font-size: 1em;
+    }
+
+    section.about .wrapInfo {
+        padding: unset;
+    }
+}
+
+@media (max-width: 660px) {
+    section.about {
+        padding: unset !important;
+    }
+
+    section.about .wrapInfo {
+        padding: 4em !important;
+    }
+
+    section.about .wrapImg,
+    section.about.press .wrapImg {
+        width: 100vw;
+    }
+
+    .wrap-press-img {
+        padding: 4em;
+    }
+}
+
+@media (max-width: 640px) {
+    div.wrapCourses {
+        grid-template-columns: repeat(2, 200px);
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 110px !important;
+    }
+}
+
+@media (max-width: 560px) {
+    div.wrapCourses {
+        grid-template-columns: repeat(2, 180px);
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 99px !important;
+    }
+}
+
+/*  --- settings for smaller mobile --- */
+@media (max-width: 520px) {
+    footer.footer-main p {
+        font-size: 0.8em;
+    }
+
+    div.gallery {
+        gap: 0.2rem;
+    }
+
+    div.wrapCourses {
+        grid-template-columns: repeat(2, 160px);
+    }
+
+    div.wrapCourses div {
+        border-radius: 10px;
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 88px !important;
+    }
+
+    div.wrapCourses div h2 {
+        letter-spacing: normal !important;
+        font-size: 1em !important;
+    }
+
+    div.wrapCourses div p {
+        font-size: 0.75em;
+    }
+}
+
+/*  --- settings for smaller mobile --- */
+@media (max-width: 485px) {
+    div.wrapCourses {
+        gap: 1em;
+    }
+}
+
+/*  --- settings for smaller mobile --- */
+@media (max-width: 467px) {
+    div.wrapCourses {
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 82px !important;
+    }
+}
+
+/* --- Mobile settings for smaller screen --- */
+@media (max-width: 440px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    div.wrapCourses {
+        grid-template-columns: repeat(2, 140px);
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 77px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    div.wrapCourses {
+        grid-template-columns: repeat(2, 120px);
+        gap: 2rem;
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 66px !important;
+    }
+
+    div.wrapCourses div h2 {
+        font-size: 0.8em !important;
+    }
+
+    div.wrapCourses div p {
+        font-size: 0.7em !important;
+    }
+}
+
+@media (max-width: 400px) {
+    div.wrapCourses {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+    div.wrapCourses {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    div.wrapCourses div h1 {
+        font-size: 36vw !important;
+    }
+
+    div.wrapCourses div h2 {
+        font-size: 1.25em !important;
+    }
+
+    div.wrapCourses div p {
+        font-size: 0.875em !important;
+    }
+
+    nav.nav .fa-xmark + ul {
+        padding: 0 2em 2em 2em;
+    }
+}
+
+@media (max-width: 350px) {
+    div.wrapCourses div h1 {
+        font-size: 35vw !important;
+    }
+}
+
+@media (max-width: 330px) {
+    div.wrapCourses div h1 {
+        font-size: 33vw !important;
+    }
+}

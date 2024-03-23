@@ -1,0 +1,172 @@
+/*
+ * Style for the about and press page
+ */
+
+.about {
+    width: 100%;
+    padding: 0 0 4em 0;
+}
+
+.about .wrapImg {
+    height: 700px;
+    margin: 0 2em 1em 0;
+    float: left;
+}
+
+.about .wrapImg img {
+    height: 100%;
+    width: auto;
+    aspect-ratio: auto 465 / 700;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.wrapInfo {
+    flex-direction: column;
+    height: 100%;
+}
+
+.wrapInfo p {
+    user-select: none;
+}
+
+.wrapInfo a {
+    color: var(--off-black);
+    font-size: 1em;
+}
+
+section.about .wrapInfo h1 {
+    padding-top: 5.6em;
+    line-height: unset;
+}
+
+.about.press .wrapImg {
+    float: right;
+    margin: 0 0 2em 2em;
+}
+
+.about.press img {
+    -webkit-transform: unset;
+    transform: unset;
+}
+
+.wrapCourses {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    max-width: 1280px;
+    gap: 4rem;
+    padding: 4em var(--nav-footer-width);
+    justify-content: space-between;
+}
+
+.wrapCourses div {
+    background-color: var(--accent-gold);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+div.wrapCourses div h1 {
+    margin-bottom: 0.6em;
+    font-size: 127px;
+    line-height: 0.2em;
+    color: var(--off-black);
+    margin-left: -0.05em;
+}
+
+div.wrapCourses div h2 {
+    font-size: 1.375em;
+}
+
+div.wrapCourses div:nth-of-type(2) h1 {
+    letter-spacing: -0.07em;
+}
+
+div.wrapCourses div:nth-of-type(3) h1 {
+    letter-spacing: -0.04em;
+}
+
+div.wrapCourses div:nth-of-type(4) h1,
+div.wrapCourses div:nth-of-type(5) h1 {
+    letter-spacing: -0.09em;
+}
+
+div.wrapCourses div:nth-of-type(6) h1,
+div.wrapCourses div:nth-of-type(7) h1 {
+    letter-spacing: 0.01em;
+}
+
+div.wrapCourses div:nth-of-type(8) h1,
+div.wrapCourses div:nth-of-type(11) h1 {
+    letter-spacing: 0.04em;
+}
+
+/* Special settings for Firefox */
+@-moz-document url-prefix() {
+    div.wrapCourses div:nth-of-type(2) h1 {
+        letter-spacing: -0.07em;
+    }
+
+    div.wrapCourses div:nth-of-type(3) h1 {
+        letter-spacing: -0.04em;
+    }
+
+    div.wrapCourses div:nth-of-type(4) h1,
+    div.wrapCourses div:nth-of-type(5) h1 {
+        letter-spacing: -0.09em;
+    }
+
+    div.wrapCourses div:nth-of-type(6) h1,
+    div.wrapCourses div:nth-of-type(7) h1 {
+        letter-spacing: 0.01em;
+    }
+
+    div.wrapCourses div:nth-of-type(8) h1,
+    div.wrapCourses div:nth-of-type(11) h1 {
+        letter-spacing: 0.04em;
+    }
+}
+
+div.wrapCourses div p {
+    text-align: center;
+    padding: 0 1em;
+    font-family: "Cooper Hewitt Medium", sans-serif;
+}
+
+div.wrapCourses div h2 {
+    text-align: center;
+    letter-spacing: -0.065rem;
+}
+
+.wrapCourses div {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s;
+}
+
+.courses,
+.wrap-press-img {
+    width: 100vw;
+    background-color: var(--off-black);
+    display: flex;
+    justify-content: center;
+}
+
+.wrapPiku {
+    width: 100%;
+    max-width: 1280px;
+    padding: 4em var(--nav-footer-width);
+    color: var(--off-white-font);
+}
+
+.wrapPiku a {
+    font-size: 1em;
+    color: var(--off-white-font);
+}
+
+.wrapPiku img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto 700 / 400;
+}

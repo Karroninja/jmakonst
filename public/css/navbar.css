@@ -1,0 +1,158 @@
+/*
+ * Style for navbar both left and right
+ */
+
+.nav,
+.right-side-nav {
+    width: var(--nav-footer-width);
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+}
+
+.nav {
+    z-index: 10;
+    left: 0;
+}
+
+.nav .logo,
+.right-side-nav li:first-child {
+    flex-basis: 300px;
+    align-items: center;
+}
+
+.nav ul,
+.right-side-nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.nav ul li,
+.right-side-nav ul li {
+    align-items: flex-start;
+    flex-basis: 170px;
+}
+
+.nav ul li,
+.right-side-nav ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav .logo a {
+    margin-top: 7.2em;
+    margin-bottom: 7.2em;
+}
+
+.nav .logo a {
+    transform: unset;
+}
+
+.nav .logo img {
+    width: 60px;
+    height: auto;
+    aspect-ratio: auto 60 / 46;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--off-black);
+}
+
+.nav a,
+.right-side-nav a,
+.right-side-nav p {
+    display: inline-block;
+    transform: var(--text-rotation);
+}
+
+.nav a:not(.active, .nav-instagram, .logo > a)::after,
+.footer-main a::after {
+    content: '';
+    height: 1px;
+    display: block;
+    background: var(--off-black);
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.nav a:hover:not(.active, .nav-instagram, .logo > a)::after,
+.footer-main a:hover::after {
+    opacity: 1;
+}
+
+.nav .active::after {
+    content: '';
+    height: 1px;
+    display: block;
+    background: var(--off-black);
+    width: 100%;
+}
+
+#fa-bars {
+    font-size: 2em;
+    margin: 1em 0 0 1em;
+    display: none;
+    color: var(--accent-gold);
+}
+
+#nav-instagram {
+    gap: 1em;
+}
+
+#nav-instagram a {
+    width: unset;
+}
+
+#nav-instagram p {
+    margin: 0;
+}
+
+.fa-xmark {
+    color: var() !important;
+    max-width: 50px;
+}
+
+#fa-bars:hover {
+    cursor: pointer;
+}
+
+#nav-instagram {
+    display: none;
+}
+
+/* ---- Style for right-side-nav -----*/
+
+.right-side-nav {
+    background-color: #ffffff;
+    right: 0;
+}
+
+.right-side-nav ul .instagram {
+    margin-top: -1em;
+    flex-basis: 136px;
+}
+
+.right-side-nav li:nth-of-type(3) p {
+    margin-bottom: 9.8em;
+}
+
+.right-side-nav p {
+    white-space: nowrap;
+}
+
+.fa-instagram {
+    font-size: 1.5em;
+    color: var(--grey);
+}
+
+.fa-instagram:active {
+    color: var(--accent-gold);
+}

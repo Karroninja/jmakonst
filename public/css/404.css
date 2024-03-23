@@ -1,0 +1,27 @@
+/*
+ * Style for 404 page
+ */
+
+#h1_404 {
+  margin-top: 2em;
+  color: var(--accent-gold);
+  font-weight: 900;
+}
+
+#h2_404 {
+    margin-top: 1.4em;
+}
+
+.main_404 {
+    height: 100vh;
+    padding-left: 4em !important;
+    padding-right: 4em !important;
+}
+
+.main_404 p:first-child {
+    line-height: 2em;
+}
+
+.footer-404 {
+    margin-top: auto;
+}

@@ -1,0 +1,42 @@
+/*
+ * Typography for the webpage
+ */
+
+html {
+    font-size: 100%;
+    line-height: var(--base-line-height);
+}
+
+p {
+   margin-bottom: var(--magic-number);
+   line-height: var(--base-line-height);
+}
+
+p,
+a {
+    font-size: var(--base-font-size);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    margin-bottom: var(--magic-number);
+    font-size: 3rem;
+    letter-spacing: 0.025rem;
+}
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 1.875rem;
+    line-height: 1em;
+}
+
+div.gallery div.art-popup .art-popup-wrap-title-cross div p:last-child,
+div.clickImg,
+footer.footer-main {
+    font-size: 0.75em;
+}

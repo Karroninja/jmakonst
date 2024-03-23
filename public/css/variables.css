@@ -1,0 +1,18 @@
+/* ---- CSS variables ---- */
+:root {
+    --accent-yellow: #fffc99;
+    --accent-gold: #E1CA6D;
+    --off-white: rgba(248, 248, 248, 0.5);
+    --off-white-font: #fff;
+    --off-black: #232323;
+    --grey: #414141;
+    --light-grey: #919191;
+    --nav-footer-width: 80px;
+    --text-rotation: rotate(-90deg);
+
+    --base-line-height: 1.5;
+    /* genom att sätta fonten till storleken em, tillåter vi användaren att kunna ändra via webbläsarens egna fontstorlekar. */
+    --base-font-size: 1em;
+    /* magic number används för att få ett enhetligt avstånd mellan styckena, en grundenhet */
+    --magic-number: calc(var(--base-line-height) * var(--base-font-size));
+}

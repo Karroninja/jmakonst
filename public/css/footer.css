@@ -1,0 +1,24 @@
+/**
+ * The stylesheet for footer-main
+ */
+
+.footer-main {
+    height: var(--nav-footer-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100vw;
+}
+
+.footer-main p {
+    text-align: center;
+}
+
+.footer-main a {
+    text-decoration: none;
+    color: var(--off-black);
+    font-weight: bold;
+    display: inline-block;
+}
